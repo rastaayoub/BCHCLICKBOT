@@ -1,5 +1,5 @@
 from telethon import TelegramClient,events, client
-from telethon.errors import FloodWaitError, ChannelsTooMuchError, UsernameNotOccupiedError, ChannelPrivateError, ChatWriteForbiddenError
+from telethon.errors import FloodWaitError, ChannelsTooMuchError, UsernameNotOccupiedError, ChannelPrivateError, ChatWriteForbiddenError, StartParamInvalidError
 from telethon.tl.types import UpdateShortMessage,ReplyInlineMarkup,KeyboardButtonUrl
 from telethon.tl.functions.messages import GetBotCallbackAnswerRequest, StartBotRequest
 from telethon.tl.functions.account import DeleteAccountRequest
@@ -144,13 +144,13 @@ try:
      print(botUN)
      try:
       await PROFILER(StartBotRequest(bot=botUN,peer=botUN,start_param=startID))
-      time.sleep(5)
-      mass = await PROFILER.get_messages(botUN, limit=2)
-      #print(mass[0])
-      await PROFILER.forward_messages('BCH_clickbot', mass[0], botUN)
      except UsernameNotOccupiedError as z:
-       mssag = await PROFILER.get_messages('BCH_clickbot', limit=2)
-       await mssag[0].click(2)
+      mssag = await PROFILER.get_messages('BCH_clickbot', limit=2)
+      await mssag[0].click(2)
+     time.sleep(5)
+     mass = await PROFILER.get_messages(botUN, limit=2)
+      #print(mass[0])
+     await PROFILER.forward_messages('BCH_clickbot', mass[0], botUN)
     else:
       botUN = msms.replace('https://t.me/', '')
       try:
@@ -219,6 +219,10 @@ try:
         await event.message.click(2)
        except ChatWriteForbiddenError:
         await event.message.click(2)
+       except StartParamInvalidError:
+        await event.message.click(2)
+       except ValueError:
+        await event.message.click(2)  
        time.sleep(2)
           
 
