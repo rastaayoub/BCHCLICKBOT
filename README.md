@@ -1,5 +1,6 @@
-# BCHCLICKBOT
-Automatique earning from BCH Click Bot 
+#  NO STOP USERBOT TELEGRAM  "BCHCLICKBOT"
+
+Automatique earning from BCH Click Bot .
 A telethon project that sends automatique commands to BCHClickBot.
 
 This script join channels , message bots, visiting sites and claim rewards.
@@ -12,7 +13,7 @@ You need to Download from the PlayStore :
 *Termux to execute the code on it .
 *Telegram app to withdraw BCH .
 
-INSTALATION:
+# INSTALATION:
   TERMUX :
         1) pkg update && pkg upgrade 
         2) pkg install python git
