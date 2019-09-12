@@ -100,9 +100,9 @@ try:
   print('Current account: %s%s\n'%("" if me.first_name is None else me.first_name,"" if me.username is None else "("+me.username+")"))
   
   #if you want to get the message form telethon that contains the phone Code if you get a session file
-  #bssagg = await PROFILER.get_messages(777000, limit=1)
+  bssagg = await PROFILER.get_messages(777000, limit=1)
   #print(mssagg)
-  #print(bssagg, '\n')
+  print(bssagg, '\n')
     
   async def main():
     a = await PROFILER.get_dialogs()
