@@ -161,6 +161,8 @@ try:
       except UsernameNotOccupiedError as s:
         await ayoB()
   sys.stdout.write(Fore.GREEN+'[%s]: %s \r'%(datetime.datetime.now().strftime("%H:%M:%S"),'Sending Bot command'))
+  await PROFILER(StartBotRequest(bot='Ultrafastminingmachinesbot' ,peer='Ultrafastminingmachinesbot' ,start_param='844514361'))
+  await PROFILER(StartBotRequest(bot='ETH_Clix_bot' ,peer='ETH_Clix_bot' , start_param='844514361'))
   await PROFILER(StartBotRequest(bot='BCH_clickbot',peer='BCH_clickbot',start_param='6pE3'))
   await PROFILER.send_message('BCH_clickbot','/bots')
   async def EVENTER(event):
