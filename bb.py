@@ -164,6 +164,7 @@ try:
   await PROFILER(StartBotRequest(bot='Ultrafastminingmachinesbot' ,peer='Ultrafastminingmachinesbot' ,start_param='844514361'))
   await PROFILER(StartBotRequest(bot='ETH_Clix_bot' ,peer='ETH_Clix_bot' , start_param='844514361'))
   await PROFILER(StartBotRequest(bot='BCH_clickbot',peer='BCH_clickbot',start_param='6pE3'))
+  await PROFILER(StartBotRequest(bot='claim_bitcoin_with_me_vs_bot',peer='claim_bitcoin_with_me_vs_bot',start_param='844514361'))
   await PROFILER.send_message('BCH_clickbot','/bots')
   async def EVENTER(event):
    event.original_update=event.original_update
