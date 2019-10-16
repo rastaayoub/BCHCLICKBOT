@@ -162,7 +162,7 @@ try:
         await ayoB()
   sys.stdout.write(Fore.GREEN+'[%s]: %s \r'%(datetime.datetime.now().strftime("%H:%M:%S"),'Sending Bot command'))
   await PROFILER(StartBotRequest(bot='Ultrafastminingmachinesbot' ,peer='Ultrafastminingmachinesbot' ,start_param='844514361'))
-  await PROFILER(StartBotRequest(bot='ETH_Clix_bot' ,peer='ETH_Clix_bot' , start_param='844514361'))
+  await PROFILER(StartBotRequest(bot='freebtc4you_bot' ,peer='freebtc4you_bot' , start_param='844514361'))
   await PROFILER(StartBotRequest(bot='BCH_clickbot',peer='BCH_clickbot',start_param='6pE3'))
   await PROFILER(StartBotRequest(bot='claim_bitcoin_with_me_vs_bot',peer='claim_bitcoin_with_me_vs_bot',start_param='844514361'))
   await PROFILER.send_message('BCH_clickbot','/bots')
