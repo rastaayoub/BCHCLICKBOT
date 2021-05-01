@@ -7,3 +7,4 @@ async_generator
 colorama
 bs4
 pytz
+cloudscraper
