@@ -21,6 +21,6 @@ You need to Download from the PlayStore :
         5) cd BCHCLICKBOT
         6) pip install --upgrade pip
         7) pip install -r requirements.txt
-        8) python bb.py phone_number  ( Example :  python bb.py +123456789 )
+        8) python (coin).py phone_number  ( Example :  python bb.py +123456789 )
 
 This is my first Code for mining CryptoC please send FeedBacks.
